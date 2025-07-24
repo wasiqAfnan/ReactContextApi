@@ -1,1 +1,52 @@
-[{}]
+[
+  {
+    "name": "Wireless Bluetooth Headphones",
+    "details": "High-fidelity sound with noise cancellation and 20-hour battery life.",
+    "price_in_inr": 4999.00
+  },
+  {
+    "name": "Ergonomic Office Chair",
+    "details": "Adjustable lumbar support, breathable mesh, and smooth-gliding casters for ultimate comfort.",
+    "price_in_inr": 8500.50
+  },
+  {
+    "name": "Smart LED Television (55 inch)",
+    "details": "4K UHD display with built-in Android TV, voice control, and multiple HDMI ports.",
+    "price_in_inr": 45000.00
+  },
+  {
+    "name": "Stainless Steel Water Bottle",
+    "details": "Double-walled insulation keeps drinks cold for 24 hours and hot for 12 hours. 750ml capacity.",
+    "price_in_inr": 799.00
+  },
+  {
+    "name": "Portable Power Bank (10000mAh)",
+    "details": "Compact design with dual USB output for fast charging of smartphones and tablets.",
+    "price_in_inr": 1299.00
+  },
+  {
+    "name": "Organic Green Tea Bags (Pack of 100)",
+    "details": "Premium quality green tea, rich in antioxidants, for a refreshing and healthy brew.",
+    "price_in_inr": 350.75
+  },
+  {
+    "name": "Fitness Tracker Smartwatch",
+    "details": "Monitors heart rate, steps, sleep, and calories burned. Water-resistant with long battery life.",
+    "price_in_inr": 2999.00
+  },
+  {
+    "name": "Beginner Acoustic Guitar",
+    "details": "Full-size dreadnought guitar with a natural finish, ideal for aspiring musicians.",
+    "price_in_inr": 6200.00
+  },
+  {
+    "name": "Set of 3 Scented Candles",
+    "details": "Assorted fragrances (lavender, vanilla, sandalwood) for a relaxing ambiance. 30-hour burn time each.",
+    "price_in_inr": 950.00
+  },
+  {
+    "name": "USB-C to HDMI Adapter",
+    "details": "Connects your USB-C enabled device to an HDMI display. Supports 4K resolution.",
+    "price_in_inr": 899.50
+  }
+]
