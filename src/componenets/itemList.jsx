@@ -5,8 +5,11 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardActions from "@mui/material/CardActions";
+import { useCart } from "../context/cartContext";
 
-function ItemList({ item, index }) {
+function ItemList({ item }) {
+  const cart = useCart();
+  console.log(cart);
   return (
     <>
       <Card
@@ -38,7 +41,17 @@ function ItemList({ item, index }) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button variant="contained">Add TO CART</Button>
+          <Button
+            variant="contained"
+            onClick={() => {
+              cart.addToCart({
+                name: item.name,
+                price: item.price_in_inr,
+              });
+            }}
+          >
+            Add TO CART
+          </Button>
         </CardActions>
       </Card>
     </>
