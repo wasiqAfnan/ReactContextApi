@@ -6,8 +6,12 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { useNavigate } from "react-router-dom";
+
 
 function Navbar() {
+  const navigate = useNavigate();
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -17,12 +21,13 @@ function Navbar() {
           </Typography>
 
           {/* Bold Button */}
-          <Button color="inherit" size="large" sx={{ fontWeight: "bold" }}>
+          <Button onClick={()=>navigate("/")} color="inherit" size="large" sx={{ fontWeight: "bold" }}>
             Home
           </Button>
 
           {/* Bold-Looking Icon */}
           <IconButton
+            onClick={()=>navigate("/cart")}
             color="inherit"
             sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
           >
