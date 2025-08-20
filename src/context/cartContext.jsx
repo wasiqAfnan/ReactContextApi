@@ -5,15 +5,15 @@ const CartContext = createContext();
 
 // Create the provider component
 export const CartContextProvider = ({ children }) => {
-  const [cart, setCart] = useState([]);
+  const [cartItems, setCart] = useState([]);
 
   // Function to add item to cart
   const addToCart = (item) => {
-    setCart([...cart, item]);
+    setCart([...cartItems, item]);
   };  
 
   return (
-    <CartContext.Provider value={{ cart, addToCart }}>
+    <CartContext.Provider value={{ cartItems, addToCart }}>
       {children}
     </CartContext.Provider>
   );
