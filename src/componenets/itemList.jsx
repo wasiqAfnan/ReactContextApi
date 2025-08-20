@@ -10,24 +10,38 @@ import CardActions from "@mui/material/CardActions";
 function ItemList({ item, index }) {
   return (
     <>
-        <Card variant="outlined" sx={{ maxWidth: 345, backgroundColor: '#595757ff' }}>
-          <CardActionArea>
-            <CardContent>
-              <Typography gutterBottom variant="h4" component="div" sx={{color: "white"}}>
-                {item.name}
-              </Typography>
-              <Typography variant="body2" sx={{ color: "lightyellow", fontSize:"1.2rem" }}>
-                {item.details}
-              </Typography>
-              <Typography variant="h5" sx={{ color: "whitesmoke", marginTop:"1rem" }}>
-                RS.{item.price_in_inr}/-
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions>
-            <Button variant="contained">Add TO CART</Button>
-          </CardActions>
-        </Card>
+      <Card
+        variant="outlined"
+        sx={{ maxWidth: 345, backgroundColor: "#595757ff" }}
+      >
+        <CardActionArea>
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h4"
+              component="div"
+              sx={{ color: "white" }}
+            >
+              {item.name}
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ color: "lightyellow", fontSize: "1.2rem" }}
+            >
+              {item.details}
+            </Typography>
+            <Typography
+              variant="h5"
+              sx={{ color: "whitesmoke", marginTop: "1rem" }}
+            >
+              RS.{item.price_in_inr}/-
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button variant="contained">Add TO CART</Button>
+        </CardActions>
+      </Card>
     </>
   );
 }

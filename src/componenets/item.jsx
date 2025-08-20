@@ -14,8 +14,8 @@ function Item() {
           padding: "1rem" // Added some padding for better visual spacing from edges
         }}
       >
-        {itemData.map((item, index) => {
-          return <ItemList item={item} index={index} />;
+        {itemData.map((item) => {
+          return <ItemList item={item} key={item.id} />;
         })}
       </div>
     </>
