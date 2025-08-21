@@ -4,10 +4,13 @@ import Navbar from "./componenets/Navbar";
 import Cart from "./componenets/cart";
 import Item from "./componenets/item";
 import { CartContextProvider } from "./context/cartContext";
+import { ToastContainer } from "react-toastify";
+
 
 function App() {
   return (
     <CartContextProvider>
+      <ToastContainer/>
       <Router>
         <Navbar />
         <Routes>

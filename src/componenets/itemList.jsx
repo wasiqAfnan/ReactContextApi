@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardActions from "@mui/material/CardActions";
 import { useCart } from "../context/cartContext";
-import toast, { Toaster } from 'react-hot-toast';
+import { toast, Bounce } from "react-toastify";
 
 function ItemList({ item }) {
   const cart = useCart();
@@ -48,6 +48,17 @@ function ItemList({ item }) {
               cart.addToCart({
                 name: item.name,
                 price: item.price_in_inr,
+              });
+              toast.success("Item Added To Cart", {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                transition: Bounce,
               });
             }}
           >
