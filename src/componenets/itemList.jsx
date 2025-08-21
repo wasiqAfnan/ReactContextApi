@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardActions from "@mui/material/CardActions";
 import { useCart } from "../context/cartContext";
+import toast, { Toaster } from 'react-hot-toast';
 
 function ItemList({ item }) {
   const cart = useCart();
