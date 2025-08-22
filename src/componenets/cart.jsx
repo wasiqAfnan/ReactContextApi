@@ -4,8 +4,6 @@ import {
   Typography,
   Card,
   CardContent,
-  CardActions,
-  Button,
   Grid,
 } from "@mui/material";
 import { useCart } from "../context/cartContext";

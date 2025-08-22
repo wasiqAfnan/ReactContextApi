@@ -11,12 +11,12 @@ function Item() {
           flexWrap: "wrap", // <--- Add this line
           gap: "1rem",
           justifyContent: "center",
-          padding: "1rem" // Added some padding for better visual spacing from edges
+          padding: "1rem", // Added some padding for better visual spacing from edges
         }}
       >
-        {itemData.map((item) => {
-          return <ItemList item={item} key={item.id} />;
-        })}
+        {itemData.map((item) => (
+          <ItemList item={item} key={item.id} />
+        ))}
       </div>
     </>
   );

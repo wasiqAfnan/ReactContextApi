@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./componenets/Navbar";
-import Cart from "./componenets/cart";
+import Cart from "./componenets/Cart";
 import Item from "./componenets/item";
 import { CartContextProvider } from "./context/cartContext";
 import { ToastContainer } from "react-toastify";
